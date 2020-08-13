@@ -1,0 +1,608 @@
+header.masthead {
+     text-align: center;
+     color: #ffcb6a;
+     background-image: url(../img/lp-2.jpg);
+     background-repeat: no-repeat;
+     background-attachment: scroll;
+     background-size: cover;
+     background-position: center center;
+     filter: saturate(0.8);
+ }
+
+ .personal {
+     width: 400px;
+     height: 637px;
+     background-color: rgba(0, 0, 0, .3);
+     z-index: 1;
+     position: absolute;
+     top: 103px;
+     right: 0;
+ }
+
+ .personal > img {
+     border-radius: 50%;
+     width: 150px;
+     height: 150px;
+     object-position: 10% 50%;
+
+ }
+
+
+.personal2 > img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-position: 10% 50%;
+
+}
+
+ #mainNav {
+     padding-top: 25px;
+     padding-bottom: 25px;
+     transition: padding-top 0.3s, padding-bottom 0.3s;
+     border: none;
+     background-color: rgba(0, 0, 0, .3);
+     list-style: none;
+ }
+
+ header.masthead {
+     text-align: left;
+ }
+
+header.masthead .intro-text {
+    padding-top: 500px;
+    padding-bottom: 50px;
+}
+
+ul.social-buttons li .twitter:hover {
+    background-color: rgb(87, 197, 241);
+}
+
+ul.social-buttons li .facebook:hover {
+    background-color: rgb(27, 27, 226);
+}
+
+ul.social-buttons li .insta:hover {
+    background-color: blueviolet;
+}
+
+ul.social-buttons li .github:hover {
+    background-color: gray;
+}
+
+.timeline > li .timeline-image {
+    background-color: white;
+}
+
+.timeline > li .gaobowl {
+    background-color: gray;
+    color: rgb(126, 229, 245)
+}
+
+.floating {
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    display: none;
+  }
+  .floating a {
+    display: block;
+    color: black;
+    font-size: 80px;
+    padding: 10px;
+    text-decoration: none;
+    opacity: 0.6;
+}
+.floating a:hover {
+    color: #ffcb6a;
+    opacity: 1;
+}
+
+.portfolio1 {
+    background-image: url(../img/lp.png);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+
+.portfolio1:hover {
+    opacity: 0.9;
+}
+
+.portfolio2 {
+    background-image: url(../img/coming.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    opacity: 0.6;
+}
+
+.portfolio3 {
+    background-image: url(../img/coming.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    opacity: 0.6;
+}
+
+.portfolio4 {
+    background-image: url(../img/command-board.png);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+
+.portfolio4:hover {
+    opacity: 0.9;
+}
+
+.portfolio5 {
+    background-image: url(../img/beef-bowl.png);
+    background-position: left;
+    background-size: cover;
+    height: 250px;
+}
+
+.portfolio5:hover {
+    opacity: 0.9;
+}
+
+.portfolio6 {
+    background-image: url(../img/coming.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    opacity: 0.6;
+}
+
+
+.card-body {
+    background-color: rgba(0,0,0,0.6);
+    height: 250px;
+    text-align: center;
+}
+
+.card-title {
+    color: white;
+}
+
+.card-text {
+    color: white;
+}
+
+
+
+
+
+.habilidades_contenedor {
+	width: 100%;
+}
+h2{text-align:center;}
+
+#codeconSkills {
+font-size: 12px;
+height: auto;
+margin: 0 auto;
+padding: 10px;
+width: 100%;
+}
+
+.codeconSkillbar {
+width: 90%;
+height: 50px;
+position: relative;
+background: rgba(17, 17, 17, .3);
+margin: 20px auto;
+}
+#codeconHTML {
+width: 100%;
+animation: Animate-HTML 4s;
+-webkit-animation: Animate-HTML 4s;
+-moz-animation: Animate-HTML 4s;
+-o-animation: Animate-HTML 4s;
+height: 50px;
+position: absolute;
+background-color: #ea8564;
+}
+@keyframes Animate-HTML {
+from {
+width: 10px;
+}
+to {
+width: 100%}
+}@-webkit-keyframes Animate-HTML {
+from {
+width: 10px;
+}
+to {
+width: 100%}
+}@-moz-keyframes Animate-HTML {
+from {
+width: 10px;
+}
+to {
+width: 100%}
+}@-o-keyframes Animate-HTML {
+from {
+width: 10px;
+}
+to {
+width: 100%}
+}
+#codeconCSS {
+animation: Animate-CSS 5s;
+-webkit-animation: Animate-CSS 5s;
+-moz-animation: Animate-CSS 5s;
+-o-animation: Animate-CSS 5s;
+width: 50%;
+height: 100px;
+position: absolute;
+background-color: #55a69f;
+}
+@keyframes Animate-CSS {
+from {
+width: 10px;
+}
+to {
+width: 70%}
+}@-webkit-keyframes Animate-CSS {
+from {
+width: 10px;
+}
+to {
+width: 70%}
+}@-moz-keyframes Animate-CSS {
+from {
+width: 10px;
+}
+to {
+width: 70%}
+}@-o-keyframes Animate-CSS {
+from {
+width: 10px;
+}
+to {
+width: 70%}
+}
+#codeconjQuery {
+animation: Animate-jQuery 5s;
+-webkit-animation: Animate-jQuery 5s;
+-moz-animation: Animate-jQuery 5s;
+-o-animation: Animate-jQuery 5s;
+width: 50%;
+height: 100px;
+position: absolute;
+background-color: #99856d;
+}
+
+.skillBar {
+	width: 5%;
+	height: 50px;
+	position: absolute;
+	background-color: transparent;
+	transition: 3s;
+	-webkit-transform: translateZ(0);
+   -moz-transform: translateZ(0);
+   -ms-transform: translateZ(0);
+   -o-transform: translateZ(0);
+   transform: translateZ(0);
+} 
+
+@keyframes Animate-jQuery {
+from {
+	width: 10px;
+}
+to {
+	width: 50%}
+}
+@-webkit-keyframes Animate-jQuery {
+	from {
+		width: 10px;
+	}
+	to {
+		width: 50%
+	}
+}
+@-moz-keyframes Animate-jQuery {
+	from {
+		width: 10px;
+	}
+	to {
+		width: 50%
+	}
+}
+@-o-keyframes Animate-jQuery {
+	from {
+		width: 10px;
+	}
+	to {
+		width: 50%
+	}
+}
+#codeconCakePHP {
+	animation: Animate-CakePHP 5s;
+	/*-webkit-animation: Animate-jQuery 5s;
+	-moz-animation: Animate-jQuery 5s;
+	-o-animation: Animate-jQuery 5s;*/
+	width: 60%;
+	height: 50px;
+	position: absolute;
+	background-color: #2f96b4;
+}
+
+@keyframes Animate-CakePHP {
+from {
+		width: 10px;
+}
+to {
+		width: 60%
+	}
+}
+
+
+.codeconSkillArea {
+z-index: 1;
+float: left;
+/* position: absolute; */
+margin-top: 15px;
+margin-left: 15px;
+text-shadow: none;
+color: #fff;
+/* font-family: Lato-Regular, sans-serif; */
+font-size: 12px;
+}
+.PercentText {
+z-index: 3;
+position: relative;
+padding-right: 15px;
+margin-top: 15px;
+float: right;
+text-shadow: none;
+color: #fff;
+/* font-family: Lato-Regular, sans-serif; */
+font-size: 12px;
+}
+
+
+@media (min-width: 360px) {
+    .row {
+        display: block;
+    }
+}
+
+@media (min-width: 576px){
+    .col-sm-6 {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .col-sm-4 {
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+
+    header.masthead .intro-text .intro-heading {
+        font-size: 70px;
+    }
+    .card-text {
+        font-size: 25px;
+    }
+    .personal {
+        display: none;
+    }
+
+    .personal2 {
+        display: block;
+        margin-bottom: 200px;
+    }
+    .timeline > li .timeline-image {
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+    }
+
+    .timeline > li .timeline-panel {
+        float: left;
+        width: 35%;
+        padding: 0 20px 20px 30px;
+        text-align: right;
+    }
+    .timeline > li.timeline-inverted > .timeline-panel {
+        float: right;
+        padding: 0 0 0 20px;
+        text-align: left;
+    }
+
+    .card-body {
+        padding-top: 50px;
+    }
+    .skills img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .col-md-6 {
+        max-width: 100%;
+    }
+    .portfolio1 {
+        height: 450px;
+    }
+    .portfolio2 {
+        height: 450px;
+    }
+    .portfolio3 {
+        height: 450px;
+    }
+    .portfolio4 {
+        height: 450px;
+    }
+    .portfolio5 {
+        height: 450px;
+    }
+    .portfolio6 {
+        height: 450px;
+    }
+    .card-title {
+        font-size: 50px;
+    }
+    .btn-primary {
+        font-size: 25px;
+    }
+    .skills h4 {
+        font-size: 40px;
+    }
+    .skills p {
+        font-size: 20px;
+    }
+    .codeconSkillbar {
+        height: 70px;
+    }
+    .skillBar {
+        height: 70px;
+    }
+    .codeconSkillArea {
+        font-size: 20px;
+    }
+    .PercentText {
+        font-size: 20px;
+    }
+    #mainNav .navbar-toggler {
+        font-size: 30px;
+    }
+    #mainNav .navbar-brand {
+        font-size: 30px;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link {
+        font-size: 120%;
+    }
+    .profile-name {
+        font-size: 30px;
+    }
+    .profile-content {
+        font-size: 20px;
+    }
+    .timeline .timeline-heading h4 {
+        font-size: 30px;
+    }
+    .timeline-body > p {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .timeline > li .timeline-image {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+
+    .timeline > li .timeline-panel {
+        padding: 0 20px 20px;
+    }
+
+    .row {
+        display: flex;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link {
+        font-size: 90%;
+    }
+    #mainNav .navbar-brand {
+        font-size: 1.75em;
+    }
+    .card-title {
+        font-size: 30px;
+    }
+    .portfolio1 {
+        height: 300px;
+    }
+    .portfolio2 {
+        height: 300px;
+    }
+    .portfolio3 {
+        height: 300px;
+    }
+    .portfolio4 {
+        height: 300px;
+    }
+    .portfolio5 {
+        height: 300px;
+    }
+    .portfolio6 {
+        height: 300px;
+    }
+    .card-body {
+        padding-top: 9px;
+    }
+    .codeconSkillArea {
+        font-size: 15px;
+    }
+    .PercentText {
+        font-size: 15px;
+    }
+    .skillBar {
+        height: 50px;
+    }
+    .codeconSkillbar {
+        height: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .personal {
+        top: 103px;
+        height: 637px;
+    }
+    header.masthead .intro-text .intro-heading {
+        font-size: 60px;
+    }
+    .personal {
+        display: block;
+    }
+    .personal2 {
+        display: none;
+    }
+    .skills img {
+        width: 225px;
+        height: 225px;
+    }
+    .skills h4 {
+        font-size: 25px;
+    }
+    .skills p {
+        font-size: 15px;
+    }
+    .col-sm-6 {
+        max-width: 33.3333333%;
+        margin: 0 auto;
+    }
+    .card-text {
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    header.masthead .intro-text .intro-heading {
+        font-size: 75px;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+    .card-body {
+        padding-top: 35px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .timeline > li .timeline-image {
+        width: 170px;
+        height: 170px;
+        margin-left: -85px;
+    }
+}
+
+
+
