@@ -27,14 +27,26 @@
 			return false;
 			});
 		});
-		</script>
-		<script>
-			function sendGform(){
-				document.myForm.submit();
-				document.getElementById('formWrapper').style.display = 'none';
-				document.getElementById('thxMessage').style.display = 'block';
+	</script>
+	<!-- <script>
+		function sendGform(){
+			document.myForm.submit();
+			document.getElementById('formWrapper').style.display = 'none';
+			document.getElementById('thxMessage').style.display = 'block';
+		}
+	</script> -->
+	<script>
+		function showThxMessage(){
+			var email = document.myForm.elements['entry.1540441791'].value;
+			if(email !== ''){
+			var thxDiv = document.getElementById('thxMessage');
+			thxDiv.getElementsByTagName('span')[0].innerHTML = email;
+			document.myForm.reset();
+			document.getElementById('formWrapper').style.display = 'none';
+			thxDiv.style.display = 'block';
 			}
-		</script>
+		}
+	</script>
 </head>
 
 <body id="page-top">
@@ -434,7 +446,7 @@
 			<div class="row">
 				<div class="col-lg-12" id="formWrapper">
 					<h3 class="section-subheading text-muted text-center">ご連絡は下記のフォームもしくはSNSのDMでお待ちしております</h3>					
-					<form id="contactForm" name="myForm" novalidate="novalidate" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfaAobCc7_1V1Lnp7OTv42uRyktHSzZcKUKo6AFsra8pueeYQ/formResponse" target="dummyIframe">
+					<form id="contactForm" name="myForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfaAobCc7_1V1Lnp7OTv42uRyktHSzZcKUKo6AFsra8pueeYQ/formResponse" target="dummyIframe">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
@@ -463,14 +475,18 @@
 							<div class="clearfix"></div>
 							<div class="col-lg-12 text-center">
 								<div id="success"></div>
-								<button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit" onclick="sendGform()">Send
-									Message</button>
+								<button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
 							</div>
 						</div>
 					</form>
-					<iframe name="dummyIframe" style="display:none;"></iframe>
+					<iframe name="dummyIframe" style="display:none;" onload="showThxMessage()"></iframe>
 				</div>
-				<div id="thxMessage" style="display:none;" class="mx-auto">お問い合わせありがとうございました。</div>
+				<div id="thxMessage" style="display:none;" class="mx-auto">
+					<p class="text-center">お問い合わせありがとうございました。</p>
+					<p class="text-center">自動返信メールをお送りいたしましたのでご確認ください。</p>
+					<p class="text-center">届いていない場合はお答えメールも届きませんので、迷惑メールとなっていないかなどご確認ください。</p>
+					<p class="text-center">本日中〜1週間以内に<span style="color:red;"></span> 宛てのメールでお答えしたします。</p>
+				</div>
 			</div>
 		</div>
 	</section>
